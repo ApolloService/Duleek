@@ -1,0 +1,9 @@
+<div class="nested-fields-container">
+  	<%= form.label :Previews %>
+  	<%= form.fields_for :previews do |preview| %>
+	    <%= render 'preview_fields', f: preview %>
+  	<% end %>
+  	<div class="nested-field-links">
+    	<%= link_to_add_association 'Add Preview', form, :previews, class: "btn btn-success" %>
+  	</div>
+</div>

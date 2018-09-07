@@ -1,0 +1,142 @@
+<fieldset>
+	<legend>Title:</legend>
+	<div class="row">
+		<div class="col-sm-2">
+			English :
+			<%= form.text_area :title,  label: false, rows: 2 %>
+		</div>
+
+		<div class="col-sm-2">
+			Italiano : 
+			<%= form.text_area :title_it,  label: false, rows: 2 %>
+		</div>
+
+		<div class="col-sm-2">
+			Espanol : 
+			<%= form.text_area :title_es,  label: false, rows: 2 %>
+		</div>		
+		<div class="col-sm-2">
+			Francais : 
+			<%= form.text_area :title_fr,  label: false, rows: 2 %>
+		</div>
+		<div class="col-sm-2">
+			Gaeilge : 
+			<%= form.text_area :title_ga,  label: false, rows: 2 %>
+		</div>
+		<div class="col-sm-2">
+			Deutsche : 
+			<%= form.text_area :title_de,  label: false, rows: 2 %>
+		</div>
+	</div>	
+</fieldset>
+
+<br>
+
+<fieldset>
+	<legend>Description:</legend>
+	<div class="row">
+		<div class="col-sm-2">
+			English :
+			<%= form.text_area :description,  label: false, rows: 8 %>
+		</div>
+		<div class="col-sm-2">
+			Italiano : 
+			<%= form.text_area :description_it,  label: false, rows: 8 %>
+		</div>
+		<div class="col-sm-2">
+			Espanol : 
+			<%= form.text_area :description_es,  label: false, rows: 8 %>
+		</div>	
+		<div class="col-sm-2">
+			Francais :
+			<%= form.text_area :description_fr,  label: false, rows: 8 %>
+		</div>
+		<div class="col-sm-2">
+			Gaeilge :
+			<%= form.text_area :description_ga,  label: false, rows: 8 %>
+		</div>
+		<div class="col-sm-2">
+			Deutsche : 
+			<%= form.text_area :description_de,  label: false, rows: 8 %>
+		</div>
+	</div>	
+</fieldset>
+
+<br>
+
+<fieldset>
+	<legend>Previews:</legend>
+	<div class="row">
+		<div class="col-sm-2">
+			Preview 1:
+			<% if heritage.preview1 %>
+				<div style="word-wrap: break-word;">
+					<p><%= heritage.preview1 %></p>
+				</div>				
+			<% end %>
+			<%= form.file_field :preview1, accept: 'image/png,image/jpg,image/jpeg', label: false%>
+		</div>
+		<div class="col-sm-2">
+			Preview 2:
+			<% if heritage.preview2 %>
+				<div style="word-wrap: break-word;">
+					<p><%= heritage.preview2 %></p>
+				</div>				
+			<% end %>
+			<%= form.file_field :preview2, accept: 'image/png,image/jpg,image/jpeg', label: false%>
+		</div>
+		<div class="col-sm-2">
+			Preview 3:
+			<% if heritage.preview3 %>
+				<div style="word-wrap: break-word;">
+					<p><%= heritage.preview3 %></p>
+				</div>				
+			<% end %>
+			<%= form.file_field :preview3, accept: 'image/png,image/jpg,image/jpeg' , label: false%>
+		</div>
+		<div class="col-sm-2">
+			Preview 4:
+			<% if heritage.preview4 %>
+				<div style="word-wrap: break-word;">
+					<p><%= heritage.preview4 %></p>
+				</div>				
+			<% end %>
+			<%= form.file_field :preview4, accept: 'image/png,image/jpg,image/jpeg' , label: false%>
+		</div>
+		<div class="col-sm-2">
+			Preview 5:
+			<% if heritage.preview5 %>
+				<div style="word-wrap: break-word;">
+					<p><%= heritage.preview5 %></p>
+				</div>				
+			<% end %>
+			<%= form.file_field :preview5, accept: 'image/png,image/jpg,image/jpeg' , label: false%>
+		</div>
+	</div>
+</fieldset>
+
+<br>
+
+<fieldset>
+	<legend>Narration & Location:</legend>
+	<div class="row">
+		<div class="col-sm-2">
+			Narration:
+			<% if heritage.narration %>
+				<div style="word-wrap: break-word;">
+					<p><%= heritage.narration %></p>
+				</div>				
+			<% end %>
+			<%= form.file_field :narration, accept: 'audio/mp3' , label: false%>			
+		</div>
+		<div class="col-sm-2">
+			Latitute : <%= form.text_field :lat, label: false %>
+		</div>
+		<div class="col-sm-2">
+			Longitute : <%= form.text_field :lng, label: false %>
+		</div>
+	</div>
+</fieldset>
+<script type="text/javascript">
+	
+</script>
