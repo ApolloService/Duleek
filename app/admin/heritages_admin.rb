@@ -13,7 +13,7 @@ Trestle.resource(:heritages, model: Heritage) do
     column :created_at
     actions 
   end
-
+  
   # Customize the form fields shown on the new/edit views.
   #
   form do |heritage|
@@ -21,6 +21,5 @@ Trestle.resource(:heritages, model: Heritage) do
     render "title", heritage: heritage
  
   end
-
-
+  
 end

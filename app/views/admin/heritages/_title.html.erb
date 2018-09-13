@@ -3,7 +3,7 @@
 	<div class="row">
 		<div class="col-sm-2">
 			English :
-			<%= form.text_area :title,  label: false, rows: 2 %>
+			<%= form.text_area :title,  label: false, rows: 2, :required => 'required' %>
 		</div>
 
 		<div class="col-sm-2">
@@ -37,7 +37,7 @@
 	<div class="row">
 		<div class="col-sm-2">
 			English :
-			<%= form.text_area :description,  label: false, rows: 8 %>
+			<%= form.text_area :description,  label: false, rows: 8, :required => 'required' %>
 		</div>
 		<div class="col-sm-2">
 			Italiano : 
@@ -74,7 +74,7 @@
 					<p><%= heritage.preview1 %></p>
 				</div>				
 			<% end %>
-			<%= form.file_field :preview1, accept: 'image/png,image/jpg,image/jpeg', label: false%>
+			<%= form.file_field :preview1, accept: 'image/png,image/jpg,image/jpeg', label: false %>
 		</div>
 		<div class="col-sm-2">
 			Preview 2:
@@ -83,7 +83,7 @@
 					<p><%= heritage.preview2 %></p>
 				</div>				
 			<% end %>
-			<%= form.file_field :preview2, accept: 'image/png,image/jpg,image/jpeg', label: false%>
+			<%= form.file_field :preview2, accept: 'image/png,image/jpg,image/jpeg', label: false %>
 		</div>
 		<div class="col-sm-2">
 			Preview 3:
@@ -92,7 +92,7 @@
 					<p><%= heritage.preview3 %></p>
 				</div>				
 			<% end %>
-			<%= form.file_field :preview3, accept: 'image/png,image/jpg,image/jpeg' , label: false%>
+			<%= form.file_field :preview3, accept: 'image/png,image/jpg,image/jpeg' , label: false %>
 		</div>
 		<div class="col-sm-2">
 			Preview 4:
@@ -101,7 +101,7 @@
 					<p><%= heritage.preview4 %></p>
 				</div>				
 			<% end %>
-			<%= form.file_field :preview4, accept: 'image/png,image/jpg,image/jpeg' , label: false%>
+			<%= form.file_field :preview4, accept: 'image/png,image/jpg,image/jpeg' , label: false %>
 		</div>
 		<div class="col-sm-2">
 			Preview 5:
@@ -110,7 +110,7 @@
 					<p><%= heritage.preview5 %></p>
 				</div>				
 			<% end %>
-			<%= form.file_field :preview5, accept: 'image/png,image/jpg,image/jpeg' , label: false%>
+			<%= form.file_field :preview5, accept: 'image/png,image/jpg,image/jpeg' , label: false %>
 		</div>
 	</div>
 </fieldset>
@@ -127,16 +127,13 @@
 					<p><%= heritage.narration %></p>
 				</div>				
 			<% end %>
-			<%= form.file_field :narration, accept: 'audio/mp3' , label: false%>			
+			<%= form.file_field :narration, accept: 'audio/mp3' , label: false %>
 		</div>
 		<div class="col-sm-2">
-			Latitute : <%= form.text_field :lat, label: false %>
+			Latitute : <%= form.text_field :lat, label: false, :required => 'required' %>
 		</div>
 		<div class="col-sm-2">
-			Longitute : <%= form.text_field :lng, label: false %>
+			Longitute : <%= form.text_field :lng, label: false, :required => 'required' %>
 		</div>
 	</div>
 </fieldset>
-<script type="text/javascript">
-	
-</script>
